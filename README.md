@@ -3,6 +3,8 @@ Desafio looqbox
 
 # Docker: 
 docker pull guikirsch/pokeapi:1.0.0
+
+# Deploy na amazon:
 Endpoint na AWS: http://Servi-ALB01-1CWZQHQSQ5D1X-477711719.us-east-1.elb.amazonaws.com
 
 ## :hammer: endpoints do projeto
