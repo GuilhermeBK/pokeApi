@@ -7,25 +7,28 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+/*
+* Utils usadas de forma significativa em integrações e chamadas em apis
+* */
 @Component
 public class RestTemplateHelper {
 
-    public RestTemplate getInstance(){
+
+    public RestTemplate getInstance() {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate;
     }
 
-    public HttpHeaders getHeaders(){
+    public HttpHeaders getHeaders() {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         return headers;
     }
 
-    public HttpEntity getHttpEntity(HttpHeaders headers){
+    public HttpEntity getHttpEntity(HttpHeaders headers) {
         HttpEntity<String> entity = new HttpEntity<>(headers);
         return entity;
     }
-
 
 
 }

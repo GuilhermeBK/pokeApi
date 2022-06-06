@@ -17,6 +17,8 @@ public class RequestImpl implements Request{
         this.helper = helper;
     }
 
+
+
     @Override
     public ResponseEntity<Pokemons> getPokemonsResponseEntity(String URL_LISTA_POKEMON, HttpEntity httpEntity) {
         ResponseEntity<Pokemons> response = helper.getInstance().exchange(URL_LISTA_POKEMON, HttpMethod.GET,

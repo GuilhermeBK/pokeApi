@@ -22,7 +22,7 @@ public class PokemonWithHighlight{
     }
 
     public PokemonWithHighlight(Pokemon pokemon, String name) {
-        this.highlight = pokemon.getName().replace(name, "<pre>" + name + "<pre>");
+        this.highlight = pokemon.getName().replace(name, "<pre>" + name + "</pre>");
         this.name = pokemon.getName();
 
     }

@@ -10,6 +10,9 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/*
+ * Tentativa de implementar cache de forma nativa
+ * */
 @Component
 public class GenericCacheImpl<K, V> implements GenericCache<K, V> {
 

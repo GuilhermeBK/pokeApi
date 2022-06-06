@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-//Formata o resultado
+//Usado para formatarar e envolver o resultado em uma lista de nome "result", conforme requerido no desafio
 @Component
 public class ResultDto<Class> {
 

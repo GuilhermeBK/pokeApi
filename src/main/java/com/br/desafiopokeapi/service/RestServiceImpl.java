@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RestServiceImpl implements RestService{
-    private static final String URL_LISTA_POKEMON = "https://pokeapi.co/api/v2/pokemon/";
+    private static final String URL_LISTA_POKEMON = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000";
 
     private final Classification classification;
 

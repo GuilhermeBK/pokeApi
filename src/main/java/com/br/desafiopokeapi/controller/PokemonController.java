@@ -22,7 +22,7 @@ public class PokemonController {
         this.cache = cache;
     }
     @GetMapping()
-    public ResponseEntity<ResultDto<Pokemon>> listForNameWithHigh(@RequestParam(required = true) String name,
+    public ResponseEntity<ResultDto<Pokemon>> listForName(@RequestParam(required = true) String name,
                                                           @RequestParam(required = false, defaultValue = "20") Long limit,
                                                           @RequestParam(required = false, defaultValue = "crescent") String order){
 
@@ -30,10 +30,14 @@ public class PokemonController {
 
     }
     @GetMapping("/highlight")
-    public ResponseEntity<ResultDto<Pokemon>> listForName(@RequestParam(required = true) String name,
+    public ResponseEntity<ResultDto<Pokemon>> listForNameWithHigh(@RequestParam(required = true) String name,
                                                            @RequestParam(required = false, defaultValue = "20") Long limit,
                                                            @RequestParam(required = false, defaultValue = "") String order){
 
+        /*
+        * Tentei aplicar cache de forma nativa, sem bibliotecas, mas nao consegui desenvolver totalmente meu raciocinio
+        *   :((
+        * */
 //        return this.cache.get(name).orElseGet(() -> restService.getForPokemonWithH(name, limit, order));
 
 
